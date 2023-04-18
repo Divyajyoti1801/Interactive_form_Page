@@ -1,0 +1,58 @@
+
+//Typography 
+$font-size-body-L:1.6rem;
+$font-size-body-M:1.4rem;
+$font-size-body-S:1.2rem;
+$font-size-header:3.7rem;
+$font-weight-S:400;
+$font-weight-M:500;
+$font-weight-L:700;
+$font-family: 'Ubuntu', sans-serif;
+
+
+//Color Scheme
+$color-primary-Marine-Blue: hsl(213, 96%, 18%);
+$color-primary-Purplish-Blue: hsl(243, 100%, 62%);
+$color-primary-Light-Blue: hsl(206, 94%, 87%);
+$color-primary-Strawberry-Red:  hsl(354, 84%, 57%);
+$color-neutral-Cool-Gray:hsl(231, 11%, 63%);
+$color-neutral-Light-Gray: hsl(229, 24%, 87%);
+$color-neutral-Alabaster: hsl(231, 100%, 99%);
+$color-neutral-White: hsl(0, 0%, 100%);
+
+
+//Default Keywords
+$bp-tablet:57em;
+$bp-mobile: 25.875em;
+$transition: all .25s ease;
+$border-radius:10px;
+
+//Mixins
+@mixin Flex($dir,$just,$align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin btn{
+    background: $color-primary-Marine-Blue;
+    color:$color-neutral-White;
+    font-size: $font-size-body-L;
+    font-weight: $font-weight-M;
+    font-family: $font-family;
+    border: none;
+    border-radius: $border-radius;
+    transition: $transition;
+}
+@mixin btn-hover{
+    background: white;
+    border:2px solid $color-primary-Marine-Blue;
+    color:$color-primary-Marine-Blue
+}
+
+@mixin Breakpoint($bp){
+    @media only screen and (max-width:$bp){
+        @content;
+    }
+}

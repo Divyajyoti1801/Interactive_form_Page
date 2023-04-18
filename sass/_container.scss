@@ -1,0 +1,10 @@
+.container{
+    height: 60rem;
+    width: 90rem;
+    padding: 1.6rem;
+    background: $color-neutral-White;
+    border-radius:$border-radius;
+    box-shadow: 0px -1px 5px 4px rgba(214,217,230,0.87);
+    -webkit-box-shadow: 0px -1px 5px 4px rgba(214,217,230,0.87);
+    -moz-box-shadow: 0px -1px 5px 4px rgba(214,217,230,0.87);
+}

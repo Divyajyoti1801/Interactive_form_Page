@@ -1,0 +1,21 @@
+html{
+    font-size: 62.5%;
+}
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-size:$font-weight-L;
+    font-family: $font-family;
+    height: 100vh;
+    background: $color-primary-Light-Blue;
+    @include Breakpoint($bp-tablet){
+        height:auto;
+    }
+    @include Flex(row,center,center);
+}
